@@ -1,0 +1,23 @@
+{
+  "name": "tcm-tongue-diagnosis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "中医舌诊数据留档系统：色卡颜色校正、舌体/舌苔/反光/齿痕/裂纹分析，WebGL2 加速",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5180",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "node scripts/e2e.mjs",
+    "e2e:ui": "node scripts/ui-smoke.mjs",
+    "report": "npm run build && node scripts/e2e.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.9.0",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
